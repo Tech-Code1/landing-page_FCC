@@ -193,9 +193,21 @@ a {
   align-items: center;
 }
 
-.article-cards-contributors {
+.article-cards-one,
+.article-cards-two {
+  display: flex;
   position: relative;
+
+  justify-content: space-between;
+}
+
+.article-cards-one {
   top: 64px;
+}
+
+.article-cards-two {
+  top: 128px;
+  margin-bottom: 64px;
 }
 
 .decorator-avatar {
@@ -279,4 +291,69 @@ a {
   font-size: 24px;
   font-family: "Nunito", sans-serif;
   color: rgb(14, 14, 14);
+}
+
+.content-row-one {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  position: relative;
+  height: 347px;
+}
+
+.others-contributors {
+  font-family: "Nunito", sans-serif;
+  color: rgb(14, 14, 14);
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.txt-join {
+  color: rgb(14, 14, 14);
+  font-style: italic;
+  font-weight: bold;
+  font-family: Roboto;
+  font-size: 14px;
+}
+
+.article-cards-three {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 64px;
+}
+
+.content-txt-others {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 88px;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.content-avatars-contributors {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.circle-contributor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  height: 73.5px;
+  width: 73.5px;
+  background: rgb(14, 14, 14);
+}
+
+.anonimo {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  color: #fafafa;
 }
