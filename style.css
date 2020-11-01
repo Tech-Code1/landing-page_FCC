@@ -292,7 +292,7 @@ a {
   margin-bottom: 32px;
   font-style: normal;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 32px;
   font-family: "Nunito", sans-serif;
   color: rgb(14, 14, 14);
 }
@@ -368,8 +368,45 @@ a {
   color: #fafafa;
 }
 
-.section-one {
+.section-one,
+.section-two,
+.title-section-two {
   margin-left: 128px;
   margin-right: 128px;
+}
+
+.Content-row-one {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 64px;
+}
+
+.section-one {
   width: 100%;
+}
+
+.section-two {
+  display: flex;
+  justify-content: center;
+}
+
+.title-open-source {
+  font-family: "Nunito", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.icon-open-source {
+  margin-right: 32px;
+}
+
+.description-open-source {
+  font-family: Roboto;
+  font-size: 18px;
+}
+
+.article-section-two {
+  width: 1000px;
 }
