@@ -1,3 +1,8 @@
+* {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -68,6 +73,7 @@ a {
   font-weight: bold;
   font-size: 24px;
   color: #fafafa;
+  margin-bottom: 24px;
 }
 
 #email {
@@ -145,6 +151,132 @@ a {
 }
 
 .card-contributor {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
   height: 347px;
   width: 481px;
+}
+
+.Content-name-person {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  left: 63px;
+  width: 418px;
+  height: 80px;
+  background: #fafafa;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+}
+
+.content-info-contributor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 315px;
+  height: 228px;
+  padding: 24px 16px 16px 16px;
+  position: relative;
+  bottom: 8px;
+  background: #fafafa;
+  border-radius: 10px;
+  z-index: -1;
+}
+
+.Content-avatar-info {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+}
+
+.article-cards-contributors {
+  position: relative;
+  top: 64px;
+}
+
+.decorator-avatar {
+  width: 162.81px;
+  height: 158.56px;
+  border-radius: 50%;
+  background: #fafafa;
+  box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.12);
+  position: absolute;
+  z-index: -2;
+}
+
+.content-decorator-avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 1;
+}
+
+.name-contributor,
+.specialty-contributor {
+  font-family: Roboto;
+  font-weight: bold;
+}
+
+.name-contributor {
+  font-size: 18px;
+  color: #262626;
+  margin-bottom: 8px;
+}
+
+.specialty-contributor {
+  font-size: 16px;
+  color: #777777;
+}
+
+.rol-contributor {
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 5px;
+  color: #ff295f;
+  margin-bottom: 24px;
+}
+
+.description-contributor {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #787878;
+}
+
+.contact-contributor {
+  display: flex;
+  flex-direction: row;
+}
+
+.txt-info-title {
+  position: relative;
+  margin-left: 100px;
+  margin-right: 24px;
+}
+
+.link-red-social {
+  height: 32px;
+  width: 32px;
+}
+
+.margin-github {
+  margin-right: 8px;
+}
+
+.title-know-us {
+  margin-top: 16px;
+  margin-bottom: 32px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  font-family: "Nunito", sans-serif;
+  color: rgb(14, 14, 14);
 }
