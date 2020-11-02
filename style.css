@@ -26,6 +26,15 @@ body {
   z-index: 1000;
 }
 
+@media screen and (max-width: 414px) {
+  #nav-bar {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 150px;
+  }
+}
+
 #header-img {
   cursor: pointer;
 }
@@ -34,6 +43,13 @@ ul {
   display: flex;
   list-style: none;
   margin-right: 128px;
+}
+
+@media screen and (max-width: 414px) {
+  ul {
+    padding: 0;
+    margin-right: 16px;
+  }
 }
 
 a {
@@ -48,24 +64,26 @@ a {
   color: rgb(14, 14, 14);
 }
 
+@media screen and (max-width: 414px) {
+  .nav-link {
+    font-size: 14px;
+  }
+}
+
 .banner-match {
   display: flex;
-  position: relative;
+  position: absolute;
   top: 110px;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
+  z-index: -1;
 }
 
-#form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  top: 250px;
-  width: 100%;
-  position: absolute;
-  z-index: 1;
+@media screen and (max-width: 414px) {
+  .banner-match {
+    top: 150px;
+  }
 }
 
 .submit-title {
@@ -74,6 +92,16 @@ a {
   font-size: 24px;
   color: #fafafa;
   margin-bottom: 24px;
+}
+
+@media screen and (max-width: 414px) {
+  .submit-title {
+    text-align: center;
+    font-size: 16px;
+    margin-left: 16px;
+    margin-right: 16px;
+    width: 343px;
+  }
 }
 
 #email {
@@ -87,6 +115,13 @@ a {
   padding: 0 16px;
   margin-bottom: 24px;
   border: 3px solid #4468e7;
+}
+
+@media screen and (max-width: 414px) {
+  #email {
+    width: 311px;
+    font-size: 14px;
+  }
 }
 
 #email:hover {
@@ -131,6 +166,12 @@ a {
   align-items: center;
 }
 
+@media screen and (max-width: 414px) {
+  .title-icon {
+    margin-left: 16px;
+  }
+}
+
 .title-community {
   font-family: "Fredoka One", cursive;
   font-weight: 400;
@@ -138,8 +179,21 @@ a {
   margin-left: 16px;
 }
 
+@media screen and (max-width: 414px) {
+  .title-community {
+    font-size: 24px;
+    margin-left: 8px;
+  }
+}
+
 #video {
   margin-top: 160px;
+}
+
+@media screen and (max-width: 414px) {
+  #video {
+    height: 300px;
+  }
 }
 
 .main-content {
@@ -489,4 +543,17 @@ a {
   height: 100%;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.form-suscription {
+  display: flex;
+  width: 100%;
+  height: 500px;
+  background: rgba(0, 0, 0, 0.7);
+  top: 74px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
 }
