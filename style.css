@@ -64,6 +64,11 @@ a {
   color: rgb(14, 14, 14);
 }
 
+.nav-link:hover {
+  color: #ff295f;
+  transition: 0.25s;
+}
+
 @media screen and (max-width: 414px) {
   .nav-link {
     font-size: 14px;
