@@ -204,6 +204,13 @@ a {
   margin-right: 128px;
 }
 
+@media screen and (max-width: 414px) {
+  .main-content {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+}
+
 .content-video {
   display: flex;
   justify-content: center;
@@ -222,10 +229,16 @@ a {
 .card-contributor {
   display: flex;
   flex-direction: column;
-
   align-items: center;
   height: 347px;
   width: 481px;
+}
+
+@media screen and (max-width: 414px) {
+  .card-contributor {
+    width: 100%;
+    margin-bottom: 24px;
+  }
 }
 
 .Content-name-person {
@@ -239,6 +252,15 @@ a {
   background: #fafafa;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 50px;
+}
+
+@media screen and (max-width: 414px) {
+  .Content-name-person {
+    width: 275px;
+    height: 70px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+  }
 }
 
 .content-info-contributor {
@@ -255,6 +277,23 @@ a {
   z-index: -1;
 }
 
+@media screen and (max-width: 414px) {
+  .content-info-contributor {
+    width: 75%;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .avatar-contributor {
+    width: 95%;
+    height: 95%;
+    position: relative;
+    right: 0;
+  }
+}
+
 .Content-avatar-info {
   display: flex;
   flex-direction: row;
@@ -262,16 +301,34 @@ a {
   align-items: center;
 }
 
+@media screen and (max-width: 414px) {
+  .Content-avatar-info {
+    width: 100%;
+  }
+}
+
 .article-cards-one,
 .article-cards-two {
   display: flex;
   position: relative;
-
   justify-content: space-between;
+}
+
+@media screen and (max-width: 414px) {
+  .article-cards-one,
+  .article-cards-two {
+    flex-direction: column;
+  }
 }
 
 .article-cards-one {
   top: 64px;
+}
+
+@media screen and (max-width: 414px) {
+  .article-cards-one {
+    top: 32px;
+  }
 }
 
 .article-cards-two {
@@ -279,14 +336,28 @@ a {
   margin-bottom: 64px;
 }
 
+@media screen and (max-width: 414px) {
+  .article-cards-two {
+    top: 35px;
+  }
+}
+
 .decorator-avatar {
-  width: 162.81px;
-  height: 158.56px;
+  width: 158px;
+  height: 158px;
   border-radius: 50%;
   background: #fafafa;
   box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.12);
   position: absolute;
   z-index: -2;
+}
+
+@media screen and (max-width: 414px) {
+  .decorator-avatar {
+    width: 100px;
+    height: 100px;
+    left: 0;
+  }
 }
 
 .content-decorator-avatar {
@@ -295,6 +366,13 @@ a {
   align-items: center;
   position: absolute;
   z-index: 1;
+}
+
+@media screen and (max-width: 414px) {
+  .content-decorator-avatar {
+    width: 100px;
+    height: 100px;
+  }
 }
 
 .name-contributor,
@@ -309,9 +387,21 @@ a {
   margin-bottom: 8px;
 }
 
+@media screen and (max-width: 414px) {
+  .name-contributor {
+    font-size: 12px;
+  }
+}
+
 .specialty-contributor {
   font-size: 16px;
   color: #777777;
+}
+
+@media screen and (max-width: 414px) {
+  .specialty-contributor {
+    font-size: 12px;
+  }
 }
 
 .rol-contributor {
@@ -323,6 +413,12 @@ a {
   margin-bottom: 24px;
 }
 
+@media screen and (max-width: 414px) {
+  .rol-contributor {
+    font-size: 14px;
+  }
+}
+
 .description-contributor {
   font-family: Roboto;
   font-style: normal;
@@ -330,6 +426,12 @@ a {
   font-size: 16px;
   line-height: 24px;
   color: #787878;
+}
+
+@media screen and (max-width: 414px) {
+  .description-contributor {
+    font-size: 12px;
+  }
 }
 
 .contact-contributor {
@@ -343,6 +445,13 @@ a {
   margin-right: 24px;
 }
 
+@media screen and (max-width: 414px) {
+  .txt-info-title {
+    margin-right: 8px;
+    margin-left: 45px;
+  }
+}
+
 .link-red-social {
   height: 32px;
   width: 32px;
@@ -350,6 +459,12 @@ a {
 
 .margin-github {
   margin-right: 8px;
+}
+
+@media screen and (max-width: 414px) {
+  .margin-github {
+    margin-right: 4px;
+  }
 }
 
 .title-know-us,
@@ -372,6 +487,14 @@ a {
   font-family: "Nunito", sans-serif;
 }
 
+@media screen and (max-width: 414px) {
+  .title-know-us,
+  .title-section-two,
+  .title-section-three {
+    font-size: 22px;
+  }
+}
+
 .content-row-one {
   display: flex;
   flex-direction: row;
@@ -387,12 +510,24 @@ a {
   font-weight: bold;
 }
 
+@media screen and (max-width: 414px) {
+  .others-contributors {
+    font-size: 22px;
+  }
+}
+
 .txt-join {
   color: rgb(14, 14, 14);
   font-style: italic;
   font-weight: bold;
   font-family: Roboto;
   font-size: 14px;
+}
+
+@media screen and (max-width: 414px) {
+  .txt-join {
+    font-size: 12px;
+  }
 }
 
 .article-cards-three {
@@ -406,6 +541,14 @@ a {
   margin-top: 160px;
   margin-bottom: 64px;
   background: #fafafa;
+}
+
+@media screen and (max-width: 414px) {
+  .article-cards-three {
+    margin-top: 80px;
+    margin-bottom: 32px;
+    height: 210px;
+  }
 }
 
 .content-txt-others {
@@ -425,6 +568,15 @@ a {
   margin-right: 128px;
 }
 
+@media screen and (max-width: 414px) {
+  .content-avatars-contributors {
+    margin-left: 16px;
+    margin-right: 16px;
+    flex-wrap: wrap;
+    height: 100%;
+  }
+}
+
 .circle-contributor {
   display: flex;
   justify-content: center;
@@ -435,6 +587,13 @@ a {
   background: rgb(14, 14, 14);
 }
 
+@media screen and (max-width: 414px) {
+  .circle-contributor {
+    height: 54px;
+    width: 54px;
+  }
+}
+
 .anonimo {
   font-family: Roboto;
   font-style: normal;
@@ -443,11 +602,26 @@ a {
   color: #fafafa;
 }
 
+@media screen and (max-width: 414px) {
+  .anonimo {
+    font-size: 24px;
+  }
+}
+
 .section-one,
 .section-two,
 .title-section-two {
   margin-left: 128px;
   margin-right: 128px;
+}
+
+@media screen and (max-width: 414px) {
+  .section-one,
+  .section-two,
+  .title-section-two {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
 }
 
 .Content-row-one {
