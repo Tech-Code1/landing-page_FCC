@@ -688,6 +688,7 @@ a {
 @media screen and (max-width: 414px) {
   .section-three {
     height: 600px;
+    padding: 16px 16px;
   }
 }
 
@@ -714,8 +715,24 @@ a {
   margin-right: 80px;
 }
 
+@media screen and (max-width: 414px) {
+  .content-inputs-contact {
+    align-content: space-between;
+    margin-right: 0;
+    margin-top: 128px;
+  }
+}
+
 .write-request {
   width: 400px;
+}
+
+@media screen and (max-width: 414px) {
+  .write-request {
+    margin-top: 32px;
+    margin-bottom: 16px;
+    width: 350px;
+  }
 }
 
 .write-request,
@@ -743,11 +760,24 @@ a {
   color: #fafafa;
 }
 
+@media screen and (max-width: 414px) {
+  .label-contact,
+  .label-contact-name {
+    margin-top: 16px;
+  }
+}
+
 .content-request {
   display: flex;
   height: 100%;
   flex-direction: column;
   justify-content: space-between;
+}
+
+@media screen and (max-width: 414px) {
+  .content-request {
+    width: 100%;
+  }
 }
 
 .form-suscription {
